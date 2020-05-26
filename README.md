@@ -258,9 +258,9 @@ Note: Make sure you have Docker installed since app has been containerized
 
 ### Request
 
-`GET /report?from={datetime}&to={datetime}`
+`GET /shoppingList/report?from={datetime}&to={datetime}`
 
-   http://localhost:4000/report?from=2020-05-26T18:23:03.638Z&to=2020-05-27T18:23:03.638Z
+   http://localhost:4000/shoppingList/report?from=2020-05-26T18:23:03.638Z&to=2020-05-27T18:23:03.638Z
 
 - Success
 
