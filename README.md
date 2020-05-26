@@ -18,7 +18,7 @@ Note: Make sure you have Docker installed since app has been containerized
 
 - This application uses JWT for auth purposes
 - Every user gets their own token on login
-
+- After token is received, you should put it in the Headers as: Authorization Bearer {token value}
 
 ## Register
 
