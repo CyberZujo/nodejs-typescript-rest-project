@@ -80,7 +80,7 @@ Note: Make sure you have Docker installed since app has been containerized
 
 `POST /resetPassword`
 
-   http://localhost:4000/user/resetPassword
+   http://localhost:4000/user/update
 
 - Body
 {
