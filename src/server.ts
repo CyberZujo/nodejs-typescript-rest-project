@@ -41,7 +41,7 @@ class Server {
         });
     
         const run = async () => {
-          await mongoose.connect((process.env.MONGO_URI), {
+          await mongoose.connect((process.env.MONGODB_URI), {
             keepAlive: true, useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
           });
         };
