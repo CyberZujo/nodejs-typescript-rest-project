@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "a647e07d-0ec0-4c5c-8ca6-53bef66577ef",
+		"name": "shopify",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all lists",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYzhlZjY5NzY4MjFhNzE1MDQ1NDVlNCIsImVtYWlsIjoiaGFyYV96dWpvQGhvdG1haWwuY29tIiwiaWF0IjoxNTkwNDk5MzQ2fQ.Llfp-yUBf-HXX-UAatUdZlZPEdjwXcqnWLoN5GeVbfk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/shoppingList",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"shoppingList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new list",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e9aae0dc-e924-42bc-8ffd-302eeff76ee5",
+						"exec": [
+							"5ec8ef6976821a71504545e45ec8ef6976821a71504545e45ec8ef6976821a71504545e4"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYzhlZjY5NzY4MjFhNzE1MDQ1NDVlNCIsImVtYWlsIjoiaGFyYV96dWpvQGhvdG1haWwuY29tIiwiaWF0IjoxNTkwNDk3NDg0fQ.WEk1Zyol3_2ILd64H3I_ixPZBMfnUDX8Nc7MhYnGLBk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"products\": [\n\t\t{\n\t\t\"name\":\"product1\",\n\t\t\"quantity\": 2\n\t\t},\n\t\t{\n\t\t\"name\":\"product2\",\n\t\t\"quantity\": 3\n\t\t}\n\t]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/shoppingList",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shoppingList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"hara_zujo\",\n\t\"password\":\"test123!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"hara_zujo@hotmail.com\",\n\t\"password\":\"test1234!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change password",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYzhlZjY5NzY4MjFhNzE1MDQ1NDVlNCIsImlhdCI6MTU5MDIyOTEwMSwiZXhwIjoxNTkwMjMyNzAxfQ.pIWxd_NuKMOqGeh_lHVpsrN_3RJ28qcKWStEF4_CenE",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"hara_zujo@hotmail.com\",\n\t\"currentPassword\": \"test123!\",\n\t\"newPassword\": \"test123!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/update/5ec8ef6976821a71504545e4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"update",
+						"5ec8ef6976821a71504545e4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update shopping list",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYzhlZjY5NzY4MjFhNzE1MDQ1NDVlNCIsImVtYWlsIjoiaGFyYV96dWpvQGhvdG1haWwuY29tIiwiaWF0IjoxNTkwNDk5OTQxfQ.wmPnH485TzMkc2tc7zwUsV2I7G3T8cllnRgfJAMI8FA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\":123\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/shoppingList/5ec92e6204df1d878051c54c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shoppingList",
+						"5ec92e6204df1d878051c54c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/report?from=2020-01-01T00:00:00Z&to=2021-01-01T00:00:00Z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"report"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2020-01-01T00:00:00Z"
+						},
+						{
+							"key": "to",
+							"value": "2021-01-01T00:00:00Z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a list",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
