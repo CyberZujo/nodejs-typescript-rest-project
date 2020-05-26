@@ -1,0 +1,30 @@
+version: '2'
+services:
+    mongodb:
+      image: 'mongo:4.0'
+      container_name: 'mongo'
+      ports: 
+        - '27018:27018'
+      environment:
+        MONGO_DATA_DIR: '/data/db'
+        MONGO_LOG_DIR: '/dev/null'
+        MONGO_INITDB_ROOT_USERNAME: root
+        MONGO_INITDB_ROOT_PASSWORD: password
+      volumes:
+        - './data/mongodb/data:/data'
+      command: 'mongod --port 27018 --smallfiles --logpath=/dev/null'
+
+    node-app:
+      container_name: 'shopify-app'
+      depends_on:
+        - "mongodb"
+      build:
+        context: .
+        dockerfile: Dockerfile
+      environment:
+        MONGODB_URI: 'mongodb://root:password@mongodb:27018'
+        MONGODB_DATABASE: 'shopify-db'
+        WAIT_HOSTS:  mongodb:27018
+        JWT_TTL_SECONDS: 60
+      ports:
+        - 4000:4000

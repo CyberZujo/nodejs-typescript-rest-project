@@ -1,0 +1,45 @@
+{
+  "name": "shopify-app",
+  "version": "1.0.0",
+  "description": "Assignment",
+  "main": "dist/src/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/src/server.js",
+    "dev": "tsc && nodemon dist/src/server.js",
+    "test": "tsc && mocha -r ts-node/register test/run-test.ts"
+  },
+  "author": "hara_zujo@hotmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
+    "mongoose": "^5.9.15"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/chai": "^4.2.11",
+    "@types/expect": "^24.3.0",
+    "@types/express": "^4.17.6",
+    "@types/mocha": "^7.0.2",
+    "@types/mongoose": "^5.7.21",
+    "@types/node": "^14.0.4",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "email-validator": "^2.0.4",
+    "mocha": "^7.2.0",
+    "moment": "^2.26.0",
+    "moment-timezone": "^0.5.31",
+    "nodemon": "^2.0.4",
+    "sinon": "^9.0.2",
+    "ts-mocha": "^7.0.0",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.3"
+  }
+}
