@@ -153,13 +153,6 @@ Note: Make sure you have Docker installed since app has been containerized
  
  Unauthorized
 
-- List already exists
-  {
-    "error": {
-        "message": "List aready exists",
-        "name": "MongooseError"
-    }
-}
 
 
 ## Get Shopping lists

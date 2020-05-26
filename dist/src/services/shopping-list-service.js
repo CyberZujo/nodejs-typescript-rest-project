@@ -33,11 +33,6 @@ class ShoppingListService {
                 if (util_1.isNullOrUndefined(shoppingList.title)) {
                     throw new mongoose_1.Error('You must provide list title');
                 }
-                const existingList = shoppingList_1.default.find({ title: shoppingList.title });
-                if (!util_1.isNullOrUndefined(existingList)) {
-                    throw new mongoose_1.Error('List aready exists');
-                }
-                const model = shoppingList;
                 const result = yield shoppingList_1.default.create(shoppingList);
                 return result;
             }

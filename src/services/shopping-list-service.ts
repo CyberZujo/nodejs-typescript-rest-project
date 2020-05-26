@@ -20,13 +20,6 @@ class ShoppingListService {
                 throw new Error('You must provide list title');
             }
 
-            const existingList = shoppingListSchema.find({title: shoppingList.title});
-
-            if(!isNullOrUndefined(existingList)) {
-                throw new Error('List aready exists');
-            }
-
-            const model:IShoppingList = shoppingList;
             const result = await shoppingListSchema.create(shoppingList);
             return result;
 
