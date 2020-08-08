@@ -1,6 +1,6 @@
-# NODEJS - ASSIGNMENT - SMALL SHOPPING APP
+# NODEJS - SMALL SHOPPING APP
 
-This is an assignment task where a small shopping app was created using NodeJS and MongoDB
+This is a small shopping app built with NodeJS and MongoDB
 
 Note: Postman should be used to test all endpoints
 Note: Make sure you have Docker installed since app has been containerized
