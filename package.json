@@ -35,7 +35,7 @@
     "email-validator": "^2.0.4",
     "mocha": "^7.2.0",
     "moment": "^2.26.0",
-    "moment-timezone": "^0.5.31",
+    "moment-timezone": "^0.5.35",
     "nodemon": "^2.0.4",
     "sinon": "^9.0.2",
     "ts-mocha": "^7.0.0",
