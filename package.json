@@ -33,7 +33,7 @@
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "email-validator": "^2.0.4",
-    "mocha": "^7.2.0",
+    "mocha": "^10.2.0",
     "moment": "^2.26.0",
     "moment-timezone": "^0.5.31",
     "nodemon": "^2.0.4",
